@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">My Blog</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#create">Create Post</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Welcome to My Blog</h1>
+            <p>This blog website is a platform where you can create, read, and share blog posts. Dive into a world of diverse content created by our community.</p>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="about-text">
+            <h2>About <span>My Blog</span></h2>
+            <br>
+            <p>This blog website is a front-end project developed to create a space for bloggers to share their thoughts, experiences, and ideas. The project was built using HTML, CSS, Bootstrap and JavaScript with a focus on creating a user-friendly interface that enhances the reading and writing experience. The goal was to design a website that is visually appealing, easy to navigate, and responsive across various devices.</p>
+            <p>Users can create posts, view a list of all posts, and read individual blog entries. The 'Create Post' feature allows users to contribute their own content, while the 'Posts' section displays all the blog entries created by users. This project demonstrates the power of front-end development in creating interactive and engaging web applications.</p>
+            <p>Whether you're a seasoned blogger or just starting out, this blog website provides all the tools you need to publish your thoughts and connect with an audience. Explore the features, create your own posts, and join our community of bloggers today.</p>
+        </div>
+    </section>
+    
+    <section class="create" id="create">
+        <div class="create-text">
+            <h2>Create <span>Post</span></h2>
+            <form id="create-post-form">
+                <input type="text" id="post-title" placeholder="Post Title" required>
+                <textarea id="post-content" placeholder="Post Content" rows="10" required></textarea>
+                <input type="file" id="post-image" accept="image/*">
+                <input type="submit" value="Create Post" class="submit">
+            </form>
+        </div>
+    </section>
+
+    <section class="posts" id="posts">
+        <div class="main-text">
+            <h2>Posts Created</h2>
+            <p>Total Posts: <span id="post-count">0</span></p>
+            <div id="posts-container">
+                <!-- Blog posts will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Us</span></h2>
+            <p>If you have any questions, feel free to reach out via email or phone.</p>
+            <div class="list">
+                <li>Email: <a href="mailto:premkumaraddala@gmail.com">premkumaraddala@gmail.com</a></li>
+                <li>Mobile: <a href="tel:8978228458">+91 8978228458</a></li>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Mobile Number" required>
+                    <textarea placeholder="How Can I Help You" required></textarea>
+                    <input type="submit" value="Send Message" class="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="blog.js"></script>
+</body>
+</html>

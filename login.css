@@ -1,0 +1,79 @@
+/* login.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://t3.ftcdn.net/jpg/06/33/38/46/360_F_633384696_Jz7VVSzl9kIAgXgd0KtuA33x6Y3j2uLD.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    background-image: url("https://i.pinimg.com/originals/60/57/08/6057089a112ba7860e894c9c014991f0.jpg");
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align form elements */
+}
+
+.form-container.hidden {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below headings */
+}
+
+input {
+    margin-bottom: 15px; /* Increase space between input fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Make inputs full-width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+button {
+    padding: 10px 20px; /* Add more padding horizontally */
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make buttons full-width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+p {
+    text-align: center;
+    margin-top: 10px; /* Add space above and below paragraphs */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#474747;
+}
+
+.submit:hover {
+    color: black;
+    background-color: rgb(139, 137, 137);
+}
